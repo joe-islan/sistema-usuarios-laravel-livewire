@@ -14,8 +14,8 @@
                     </svg>
                 </div>
                 <button wire:click="sortBy('name')"
-                    class="w-full sm:w-auto px-4 py-2 bg-purple-100 text-purple-600 rounded-lg text-sm flex justify-center items-center"
-                    style="border: 1px solid #9333ea">
+                    class="w-full sm:w-auto px-4 py-2 bg-purple-100 text-purple-600 rounded-lg text-sm flex justify-center items-center border-2 border-[#9333ea]"
+                    >
                     Ordenar por Nome
                     @if ($sortField == 'name')
                         @if ($sortDirection == 'asc')
@@ -93,9 +93,16 @@
                                         {{ $user->created_at->locale('pt_BR')->diffForHumans() }}</td>
                                     <td class="text-gray-600 pr-4">
                                         <a href="{{ route('acessarComo', $user->id) }}"
-                                            class="w-full sm:w-auto p-2 px-4 bg-purple-600 text-white rounded-lg text-sm">
-                                            Acessar conta
+                                            class="w-full sm:w-auto p-2 px-4 bg-purple-600 text-white rounded-lg text-sm flex items-center justify-center">
+
+                                            <svg class="w-5 h-5 sm:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M10 2a8 8 0 1 0 8 8h-3a5 5 0 1 1-5-5V2z"/>
+                                                <path d="M12 2h4v4h-2V4h-2V2z"/>
+                                            </svg>
+
+                                            <span class="hidden sm:inline">Acessar conta</span>
                                         </a>
+
 
                                     </td>
                                 </tr>

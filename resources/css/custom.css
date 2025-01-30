@@ -1,0 +1,46 @@
+body {
+    background-color: #ebefff;
+    font-family: "Poppins", sans-serif;
+}
+
+.custom-bg {
+    background-color: #afb3ff;
+}
+
+.form-input {
+    border: 2px solid #656ed3;
+    border-radius: 50px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 8px;
+    background-color: #f7fafc;
+}
+
+.register-btn {
+    background-color: #6366f1;
+    color: white;
+    padding: 12px;
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.split-background {
+    position: relative;
+    overflow: hidden;
+}
+
+.split-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #afb3ff;
+    z-index: -1;
+}
+
+.imagem img {
+    width: 900px;
+}
