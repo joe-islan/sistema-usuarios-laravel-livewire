@@ -14,5 +14,5 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-    Route::get('/acessar-como/{id}', [DashboardController::class, 'acessarComo'])->name('acessarComo');
+    Route::get('/acessar-como/{user}', [DashboardController::class, 'acessarComo'])->name('acessarComo');
 });

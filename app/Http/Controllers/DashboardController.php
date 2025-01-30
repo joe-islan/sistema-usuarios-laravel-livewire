@@ -2,21 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\View\View;
 
 class DashboardController extends Controller
 {
-    public function index()
+    public function index(): View
     {
         return view('dashboard');
     }
 
-    public function acessarComo($id)
+    /**
+     * Autentica como outro usuário
+     *
+     * @param User $user
+     * @return RedirectResponse
+     */
+    public function acessarComo(User $user): RedirectResponse
     {
-        $user = User::findOrFail($id);
-
         Auth::guard('web')->login($user);
 
         return redirect()->route('dashboard');
