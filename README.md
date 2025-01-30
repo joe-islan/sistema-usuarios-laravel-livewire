@@ -149,6 +149,7 @@ A funcionalidade de autenticação como outro usuário foi mantida intencionalme
 - Integração com Jetstream
 
 Em um ambiente de produção, implementaria:
+
 ✅ Camada de serviço dedicada  
 ✅ Registro de logs de auditoria  
 ✅ Validação de permissões hierárquicas  
