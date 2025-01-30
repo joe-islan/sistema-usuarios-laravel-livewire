@@ -128,8 +128,6 @@ Caso tenha rodado o seeder padrão, utilize as seguintes credenciais:
 
 Ou pode criar um novo usuário manualmente, na pagina de Registro
 
-```
-
 ## Estrutura do Projeto
 
 - **Controllers**: `app/Http/Controllers`
