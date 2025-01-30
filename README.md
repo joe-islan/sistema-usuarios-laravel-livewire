@@ -132,7 +132,7 @@ Ou pode criar um novo usuário manualmente, na pagina de Registro
 
 - **Controllers**: `app/Http/Controllers`
 - **Models**: `app/Models`
-- **Livewire Components**: `app/Http/Livewire`
+- **Livewire Components**: `app/Livewire`
 - **Views**: `resources/views`
 - **Tailwind CSS**: `resources/css`
 - **JavaScript**: `resources/js`
